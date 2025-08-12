@@ -1,3 +1,4 @@
+import Body from "./Components/Body"
 
 
 function App() {
@@ -5,7 +6,7 @@ function App() {
 
   return (
     <>
-      <h1>Netflix project.</h1>
+    <Body />
     </>
   )
 }
