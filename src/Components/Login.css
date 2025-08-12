@@ -98,5 +98,9 @@ i{
     top:-2.8rem;
     left:18rem;
     color:#fff;
+    cursor:pointer;
+}
+.error{
+    color:red;
 }
 
