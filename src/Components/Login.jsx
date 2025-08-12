@@ -40,11 +40,11 @@ let handleButtonClick=()=>{
             {input==='Sign Up' &&<input type="text" placeholder="Your name"  required/>}
 
             <input type="email" placeholder='email' required  ref={email}/>
-            <p className='error'>{error==='email' && 'Email is not valid'}</p>
+            <span className='error'>{error==='email' && 'Email is not valid'}</span>
 
             <input type={pass===true ? "password" : "text"} placeholder='password'  ref={password}/>
             {pass===true ? <i class="fa-solid fa-lock" onClick={handlePassword}></i> : <i class="fa-solid fa-lock-open" onClick={handlePassword}></i>} 
-             <p className='error'>{error==='password' && 'Password is not valid'}</p>
+             <span className='error'>{error==='password' && 'Password is not valid'}</span>
             
             <button onClick={handleButtonClick}>{input}</button>
 
