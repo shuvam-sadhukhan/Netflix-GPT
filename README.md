@@ -14,7 +14,9 @@
 - Implement Sign in user account
 - Created redux store with userSlice
 - Implement Logout 
+- Register TMDB API & create an app & get access token
 - Fetch movies from TMDB Movies
+- Get data from TMDB now playing movies list API
 
 # Features
 

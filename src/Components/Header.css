@@ -2,7 +2,10 @@
 .header{
     position:absolute;
     padding-left: 4rem;
+    /* box-shadow: 10px 5px 5px black; */
+    
 }
 .header img{
     width:11rem;
+    /* background-color: pink;; */
 }

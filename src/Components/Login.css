@@ -44,6 +44,9 @@
     opacity:0.4;
     
 }
+.login-form input:hover{
+     border:2px solid rgba(255, 255, 255, 0.5);
+}
 .login-form button{
     width:100%;
     border:0;
@@ -58,6 +61,9 @@
     cursor:pointer;
     height:2rem;
 
+}
+.login-form button:hover{
+    border:2px solid black;
 }
 .form-help{
     display:flex;

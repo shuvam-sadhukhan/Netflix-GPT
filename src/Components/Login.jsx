@@ -5,13 +5,17 @@ import {checkValidData} from '../Utils/Validate'
 import {  createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import {auth} from '../Utils/Firebase';
 
+import {  updateProfile } from "firebase/auth";
+
 
 const Login = () => {
+ 
 
   let [input,setInput]=useState('Sign In');
   let [pass,setPass]=useState(true);
   let [error,setError]=useState('');
   let [fireError,setFireError]=useState('');
+  
   
   let handleChange=()=>{
     // setInput('Sign In');
@@ -38,9 +42,12 @@ let handleButtonClick=()=>{
    createUserWithEmailAndPassword(auth, email.current.value, password.current.value)
   .then((userCredential) => {
     // Signed up 
-    const user = userCredential.user;
+    const user = userCredential.user; 
+   
     console.log(user);
     // ...
+    
+
   })
   .catch((error) => {
     const errorCode = error.code;
@@ -64,7 +71,7 @@ let handleButtonClick=()=>{
     const errorCode = error.code;
     const errorMessage = error.message;
     console.log(errorCode+" "+ errorMessage);
-    setFireError("Email or Password doesnot match");
+    setFireError("!!! Kindly check your email or password");
   });
 
    }
@@ -73,6 +80,8 @@ let handleButtonClick=()=>{
    password.current.value='';
 }
 
+
+  let name=useRef(null);
    let email=useRef(null);
    let password=useRef(null);
   
@@ -83,7 +92,7 @@ let handleButtonClick=()=>{
          <div className="login-form">
           <h1>{input}</h1>
           <form action="" onSubmit={(e)=> e.preventDefault()}>
-            {input==='Sign Up' &&<input type="text" placeholder="Your Name"  required/>}
+            {input==='Sign Up' &&<input type="text" placeholder="Your Name" ref={name} required/>}
 
             <input type="email" placeholder=' Your Email' required  ref={email}/>
             <span className='error'>{error==='email' && 'Email is not valid'}</span>
@@ -104,7 +113,7 @@ let handleButtonClick=()=>{
             </div>
           </form>
           <div className="form-switch">
-            <p><u>{input=== 'Sign In' ? 'New to Netflix?' : 'Please sign in: '}</u> <span onClick={handleChange}>{input==='Sign Up' ? 'Sign In' : 'Sign Up'}.</span></p>
+            <p><u>{input=== 'Sign In' ? 'New to Netflix?' : 'Already Registered?'}</u> <span onClick={handleChange}>{input==='Sign Up' ? 'Sign In' : 'Sign Up'}.</span></p>
           </div>
          
          </div> 

@@ -1,5 +1,28 @@
-.browse-header{
+/* .browse-header{
     display:flex;
     justify-content: space-between;
 
+} */
+
+.browse-header{
+    box-shadow: 6px 3px 5px black;
+    width:98%;
+    height:5rem;
+    display: flex;;
+    justify-content: space-evenly;
+} 
+.browse-header .btn{
+    width:5rem;
+    /* border:1px solid red; */
+    margin:1rem;
+    background-color: #F6EFD2;
+    color:#000;
+    opacity: 0.5;
+    font-size: 0.75rem;
+}
+.browse-header .btn:hover{
+    opacity:1;
+    border: 1px solid black;
+    border-top-left-radius: 2rem;
+    background-color: #F6EFD2;
 }
