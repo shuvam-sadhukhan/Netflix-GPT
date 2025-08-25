@@ -20,8 +20,13 @@
 - Custom Hook for Now Playing Movies
 - Create movieSlice
 - Update store with movie data
-- Fetch data for trailer video
+- Fetch data for Trailer video
 - Embeded the youtube video and make it autoplay and mute
+- Bulid Secondary Component
+- Bulid Movie list
+- Bulid Movie Card
+- TMDB image CDN URL
+
 
 # Features
 

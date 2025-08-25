@@ -1,0 +1,21 @@
+.details{
+    display:flex;
+    gap:6px;
+   overflow-x: scroll;
+
+}
+.details::-webkit-scrollbar{
+    width:0;
+}
+.main{
+    margin-left:3rem;
+}
+.main h4{
+   
+    padding:1rem;
+    color:#fff;
+    
+}
+.main{
+    background:black;
+}

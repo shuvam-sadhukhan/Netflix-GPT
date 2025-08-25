@@ -5,7 +5,7 @@
 } */
 
 .browse-header{
-    box-shadow: 6px 3px 5px black;
+    /* box-shadow: 6px 3px 5px black; */
     width:98%;
     height:5rem;
     display: flex;;

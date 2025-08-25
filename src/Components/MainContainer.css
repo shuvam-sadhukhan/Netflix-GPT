@@ -14,13 +14,13 @@
 }  
 .content h1{
     color:#fff;
-    opacity:0.5;
+    opacity:0.7;
     
 }
 .content p{
     color:#fff;
     
-     opacity:0.5;
+     opacity:0.7;
 }
 .content .btn{
    display:flex;
@@ -42,9 +42,11 @@
 }
 .btn .play{
     background-color: #F6F1E9;
-    opacity: 0.6;
+    opacity: 1;
+    font-weight:italic;
 }   
 .btn .more{
     background-color: transparent;  
     color:#fff;
 }
+
