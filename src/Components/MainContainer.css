@@ -1,0 +1,50 @@
+.content{
+     width:25rem; 
+     height:15rem;
+    /* border:1px solid red;  */
+    margin-left:3rem;
+    
+    position: absolute;
+    top:15rem;
+  /* background:linear-gradient(to right,transparent, black ); */
+   opacity:0.8;
+   
+
+    
+}  
+.content h1{
+    color:#fff;
+    opacity:0.5;
+    
+}
+.content p{
+    color:#fff;
+    
+     opacity:0.5;
+}
+.content .btn{
+   display:flex;
+   gap:10px;
+   width: 18rem;
+   
+}
+.btn button{
+    width:15rem;
+    height:2.5rem;
+    border-radius: 0.5rem;
+    font-size: 0.75rem;
+    
+}
+.btn button:hover{
+    opacity:1;
+    background-color: #F6F1E9;
+    color:black;
+}
+.btn .play{
+    background-color: #F6F1E9;
+    opacity: 0.6;
+}   
+.btn .more{
+    background-color: transparent;  
+    color:#fff;
+}

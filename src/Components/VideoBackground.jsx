@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { API_OPTIONS } from '../Utils/Constants'
+import './VideoBackground.css'
 
 const VideoBackground = ({id}) => {
     let [img,setImg]=useState('');
@@ -19,9 +20,11 @@ const VideoBackground = ({id}) => {
     },[])
   return (
     <>
-     <iframe width="560" height="315" src={`https://www.youtube.com/embed/${img}?si=oawJpBSPAgOiOKtl`} title="YouTube video player"
+    <div className="video">
+     <iframe  width="100%" height="550" src={`https://www.youtube.com/embed/${img}?si=oawJpBSPAgOiOKtl?&autoplay=1&mute=1`} title="YouTube video player"
        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-       referrerpolicy="strict-origin-when-cross-origin" ></iframe>
+       referrerpolicy="strict-origin-when-cross-origin"  ></iframe>
+       </div>
     </>
   )
 }

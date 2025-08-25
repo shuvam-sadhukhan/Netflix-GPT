@@ -1,6 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import VideoBackground from './VideoBackground';
+import './MainContainer.css'
 
 const Maincontainer = () => {
 
@@ -12,10 +13,19 @@ const Maincontainer = () => {
    
   return (
    <>
+    <VideoBackground id={id} />
+   
+   <div className="content">
      <h1>{title}</h1>
-     <span>{overview}</span>
-     <span>{vote_average}</span>
-     <VideoBackground id={id} />
+     <p>{overview}</p>
+     <div className="btn">
+      <button className='play'>Play</button>
+       <button className='more'>More Info</button>
+     </div>
+     </div>
+     
+    
+     
 
    </>
   )

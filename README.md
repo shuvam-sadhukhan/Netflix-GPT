@@ -17,6 +17,11 @@
 - Register TMDB API & create an app & get access token
 - Fetch movies from TMDB Movies
 - Get data from TMDB now playing movies list API
+- Custom Hook for Now Playing Movies
+- Create movieSlice
+- Update store with movie data
+- Fetch data for trailer video
+- Embeded the youtube video and make it autoplay and mute
 
 # Features
 
