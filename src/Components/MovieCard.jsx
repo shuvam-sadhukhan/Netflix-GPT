@@ -5,7 +5,7 @@ import './MovieCard.css'
 const MovieCard = ({posterPath}) => {
   return (
    <>
-   <img src={API_URL+posterPath} alt="" />
+   <img src={API_URL+posterPath} alt=""  className='image'/>
    </>
   )
 }

@@ -25,4 +25,27 @@
     border: 1px solid black;
     border-top-left-radius: 2rem;
     background-color: #F6EFD2;
+    font-weight:bold;
+    border:2px solid black;
+
 }
+.browse-header .GPT{
+    width:7rem;
+    font-size: 0.75rem;
+    opacity:0.9;
+    font-weight:bold;
+    background-color: purple;
+    color:#fff;
+}
+.browse-header .GPT:hover{
+    border-top-left-radius: 0;
+    border:none;
+    border:2px solid black;
+    outline: none;
+    border-radius:10px;
+
+}
+.sele{
+    border:none;
+}
+
