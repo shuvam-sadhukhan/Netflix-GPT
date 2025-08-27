@@ -26,7 +26,9 @@
 - Bulid Movie list
 - Bulid Movie Card
 - TMDB image CDN URL
-
+- GPT Search page
+- GPT Search Bar
+- Multi Language Feature in our app
 
 # Features
 

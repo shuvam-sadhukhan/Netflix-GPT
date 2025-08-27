@@ -1,17 +1,18 @@
 import React from 'react'
 import './GptSearchBar.css'
 import { lang } from '../Utils/Constants'
+import { useSelector } from 'react-redux'
 
-const GptSearchBar = ({data}) => {
-  // if(!data) return;
+const GptSearchBar = () => {
+  const name=useSelector((store)=> store.config.lang);
  
   return (
    <>
    <div className="main-content">
      <div className="form-container">
         <form action="">
-            <input type="text" placeholder={lang.bengali.gptPlaceholder} />
-            <button className='search-btn'>{lang.bengali.search}</button>
+            <input type="text" placeholder={lang[name].gptPlaceholder} />
+            <button className='search-btn'>{lang[name].search}</button>
         </form>
      </div> 
    

@@ -3,12 +3,12 @@ import GptSearchBar from './GptSearchBar'
 import GptMovieSugession from './GptMovieSugession'
 
 
-const GptSearch = ({data}) => {
+const GptSearch = () => {
 
     
   return (
     <>
-   <GptSearchBar data={data}/>
+   <GptSearchBar/>
    <GptMovieSugession />
   
     </>

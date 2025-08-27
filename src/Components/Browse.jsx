@@ -10,13 +10,14 @@ import Maincontainer from './Maincontainer';
 import SecondaryContainer from './SecondaryContainer';
 import GptSearch from './GptSearch';
 import { toggleGptSearchView } from '../Utils/GptSlice';
+import { changeLanguage } from '../Utils/configSlice';
 
 
 
 
 const Browse = () => {
   
-   const[data,setData]=useState('');
+   
  const dispatch=useDispatch();
  const toggleGpt=useSelector((store)=> store.gpt.showGptSearch);
 
@@ -41,6 +42,9 @@ const handleGpt=()=>{
   dispatch(toggleGptSearchView());
   
 }
+const handleLang=(e)=>{
+   dispatch(changeLanguage(e.target.value));
+}
   
 
    return (
@@ -48,16 +52,16 @@ const handleGpt=()=>{
     <div className="browse-header">
       <Header  />
       {/* <h5>welcome:</h5> {user.email} */}
-      {toggleGpt===true && <select className='sele'  onChange={(e)=>setData(e.target.value)}>
+      {toggleGpt===true && <select className='sele' onChange={handleLang}>
         <option value="english">English</option>
          <option value="hindi">Hindi</option>
          <option value="bengali">Bengali</option>
          <option value="urdu">Urdu</option>
         </select>}
-      <button className='btn GPT' onClick={handleGpt}>GPT Search</button>
+      <button className='btn GPT' onClick={handleGpt}>{toggleGpt===true? "Home" : "GPT Search"}</button>
       <button className='btn' onClick={handleButton}>LogOut</button>
     </div>
-    {toggleGpt===true?  <GptSearch data={data} />: <><Maincontainer />  <SecondaryContainer />    </>}
+    {toggleGpt===true?  <GptSearch />: <><Maincontainer />  <SecondaryContainer />    </>}
     
      
     
