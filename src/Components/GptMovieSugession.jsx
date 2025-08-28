@@ -2,7 +2,7 @@ import React from 'react'
 
 const GptMovieSugession = () => {
   return (
-    <div>GptMovieSugession</div>
+    <div>Under Construction!!! Problems of GPT API</div>
   )
 }
 

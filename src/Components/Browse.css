@@ -47,5 +47,8 @@
 }
 .sele{
     border:none;
+    outline:none;
+    width:4.5rem;
+
 }
 
