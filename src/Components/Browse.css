@@ -6,9 +6,9 @@
 
 .browse-header{
     /* box-shadow: 6px 3px 5px black; */
-    width:98%;
+    max-width:98%;
     height:5rem;
-    display: flex;;
+    display: flex;
     justify-content: space-evenly;
 } 
 .browse-header .btn{
@@ -51,4 +51,24 @@
     width:4.5rem;
 
 }
+
+@media (max-width:500px){
+    .browse-header{
+        flex-wrap:wrap;
+        height: 12rem;
+        
+
+
+    }
+    .browse-header .btn{
+        width:5rem;
+        padding:2px;
+        font-size: 1rem;
+       
+
+       
+        
+}
+    }
+
 

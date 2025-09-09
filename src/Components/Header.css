@@ -9,3 +9,9 @@
     width:11rem;
     /* background-color: pink;; */
 }
+
+@media (max-width:500px){
+    .header{
+        padding-left:8rem;
+    }
+}

@@ -39,3 +39,19 @@
     color:#fff;
 
 }
+
+@media (max-width:500px){
+    .form-container{
+    position:absolute;
+    left:5%;
+    top:50%;
+    width:22rem;
+    padding:7px;
+    }
+  .form-container input{
+    width:16rem;
+  }
+  .form-container button{
+    width:3.5rem;
+  }
+}
