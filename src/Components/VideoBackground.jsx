@@ -10,7 +10,7 @@ const VideoBackground = ({id}) => {
     const getMovieVideo= async()=>{
         let data= await fetch(`https://api.themoviedb.org/3/movie/${id}/videos?language=en-US`, API_OPTIONS);
         let json=await data.json();
-        console.log(json.results[0].key);
+        // console.log(json.results[0].key);
         setImg(json.results[0].key);
 
     }

@@ -3,7 +3,7 @@ import MovieCard from './MovieCard';
 import './MovieList.css'
 
 function MovieList({title,movies}) {
-    console.log(movies);
+    // console.log(movies);
   return (
    <>
      <div className='main'>
