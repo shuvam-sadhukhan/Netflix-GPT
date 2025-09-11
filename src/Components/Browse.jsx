@@ -11,6 +11,7 @@ import SecondaryContainer from './SecondaryContainer';
 import GptSearch from './GptSearch';
 import { toggleGptSearchView } from '../Utils/GptSlice';
 import { changeLanguage } from '../Utils/configSlice';
+import usePopularMovies from '../hooks/usePopularMovies';
 
 
 
@@ -24,6 +25,7 @@ const Browse = () => {
   const user=useSelector((store)=> store.user);
   //  if(!user) return;
   useNowPlayingMovies();
+  usePopularMovies();
   
 
   let handleButton=()=>{
