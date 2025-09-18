@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { API_OPTIONS } from '../Utils/Constants'
-import './VideoBackground.css'
+import './Videobackground.css'
 
 const VideoBackground = ({id}) => {
     let [img,setImg]=useState('');
