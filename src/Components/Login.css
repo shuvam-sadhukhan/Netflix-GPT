@@ -36,6 +36,7 @@
     padding:1rem;
     font-size: 1rem;
     font-weight: 500;
+   
 }
 .login-form input::placeholder{
     font-size:1rem;
@@ -122,6 +123,11 @@ i{
     .login-form h1{
         text-align: center;
     }
+    .login-form i{
+        position:relative;
+        left:255px;
+    }
+    
     
     
 }
